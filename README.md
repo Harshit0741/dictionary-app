@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# Dictionary App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple mobile dictionary app built using React Native. The app allows users to search for a word and view its definition and synonyms fetched from a public API.
 
-## Get started
+## Setup & Run Instructions:
 
-1. Install dependencies
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Harshit0741/dictionary-app.git
+   ```
+2. Install dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+   or
+   ```bash
+   yarn install
+   ```
+3. Start the app:
+   
+      - Run the app on your emulator or device:
    ```bash
    npx expo start
    ```
+5. To run tests:
+   ```bash
+   npm test
+   ```
 
-In the output, you'll find options to open the app in a
+## Time Spent & Next Steps:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Time spent**: Approx. <3 hours working on the app, including setting up the environment, implementing the features, and testing.
+- **Next steps** (if more time was available):
+  - Add more unit/component tests, especially for edge cases (e.g., empty term input, network errors).
+  - Improve the UI and user experience with animations and better styling.
+  - Add offline support to the app.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+ ## Test Suite:
 
-## Get a fresh project
+ The tests are using Jest and React Native Testing Library for component and functionality testing. To run the tests:
+   ```bash
+   npm test
+   ```
+   or
+   ```bash
+   yarn test
+   ```
+   This will execute the test suite and show the results in your terminal.
 
-When you're ready, run:
+## Example Tests:
+   1. **Rendering Input and Button**: Ensures that the input field and submit button are rendered correctly.
+   
+   2. **Loading Indicator**: Verifies that the loading spinner is shown when the "Submit" button is pressed.
+    
+   3. **Error Handling**: Ensures that the appropriate error message is shown when no term is found or when there is a network issue.
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+These tests ensure that the app's core functionalities are working as expected.
+  
