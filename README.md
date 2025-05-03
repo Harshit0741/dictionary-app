@@ -30,7 +30,7 @@ A simple mobile dictionary app built using React Native. The app allows users to
 ## Time Spent & Next Steps:
 
 - **Time spent**: Approx. <3 hours working on the app, including setting up the environment, implementing the features, and testing.
-- **Next steps** (if more time was available):
+- **Next steps**:
   - Add more unit/component tests, especially for edge cases (e.g., empty term input, network errors).
   - Improve the UI and user experience with animations and better styling.
   - Add offline support to the app.
